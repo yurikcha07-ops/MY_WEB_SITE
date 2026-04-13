@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Profile</title>
+  <link rel="stylesheet" href="puter.css">
+</head>
+<body class="IMPER">
+
+  <header class="header">
+    <h1>Мій профіль</h1>
+   
+         <nav>
+          <ul>
+            <li class ="home"><a href="index.html">Home</a></li>
+        <li class = "profile"><a href="profile.html">Profile</a></li>
+            <li class="news"><a href="LastNews.html">Last News</a></li>
+          </ul>
+            </nav>
+      
+    
+  </header>
+
+  <main>
+    <h2>Введіть свої данні профілю</h2>
+    <form action="#" method="get" enctype="multipart/form-data">
+      <div><p><label for="file">Виберіть фото профілю:</label><br/>
+          <input type="file" name="foto" ></p></div>
+     <div> <label for="name">Ім’я:</label></div>
+      <div><input type="text" id="name" name="name" placeholder="Введіть ім’я та прізвище"></div>
+
+     <div> <label for="email">Email:</label><br>
+      <div><input type="email" id="email" name="email" placeholder="testedovi@gmail.com"></div>
+<div><br />
+  <label for="password">Введіть Пароль:</label><br>
+  <input type="password" name="userpawsord" value="" placeholder="Пароль" /> 
+  <br>
+</div>
+     <div> <label for="phone">Телефон:</label></div>
+      <div><input type="tel" id="phone" name="phone" placeholder="+380"></div>
+
+      <div><label for="bio">Про себе:</label></div>
+     <div> <textarea id="bio" name="bio" rows="4" cols="40" placeholder="Напишіть декілька слів про себе"></textarea></div>
+ Збережи зміни профлю або очисти:
+     <div> <input type="submit" value="Зберегти"> або <input type="reset" value="Очистити"></div>
+    </form>
+  </main>
+
+  <footer>
+    <p>&copy; 2026 Pie Hunters. Всі права захищені.</p>
+  </footer>
+
+</body>
+</html>

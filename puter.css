@@ -1,58 +1,76 @@
-
-
 body {
-  color: white;   /* або будь-який інший колір */
+  color: white;  
 }
+
+
 nav ul {
-  list-style: none;      /* прибираємо крапки */
+  list-style: none;    
   margin: 0;
   padding: 0;
-  display: flex;         /* робимо горизонтальний ряд */
-  justify-content: flex-start; /* вирівнюємо по центру */
-  gap: 13px;             /* відстань між кнопками */
+  display: flex;        
+  justify-content: flex-start; 
+  gap: 13px;            
 }
 
 nav li {
-  display: inline-block; /* щоб класи працювали як блоки */
-}
-
-header {background-color: #666666;
-background-image: url('https://i.ytimg.com/vi/-C8Ubw81UfA/maxresdefault.jpg');
-background-position:  center;
-background-size: cover;
-  background-repeat: no-repeat;
-padding:20px 20px;
-}
-  
-header h1 {
-  color: white;  
-}
-.home, .news, .contacts, .profile {
-  background-color: #5a3030;   /* один колір для всіх */
-  border: 1px solid #333;        /* тонка рамка */
-  border-radius: 7px;           /* заокруглені кути */
-  padding: 10px 15px;             /* компактні відступи */
+  display: inline-block; 
+  background-color: #5a3030;   
+  border: 1px solid #333;      
+  border-radius: 7px;          
+  padding: 10px 20px;             
   text-align: center;
 }
 
-.home a, .news a, .contacts a, .profile a {
-  color: white;                  /* контрастний текст */
-  font-size: 15px;
+nav li a {
+  color: white;                 
+  font-size: 18px;
+  text-decoration: none;
+  display: block;
 }
 
-.home a:hover, .news a:hover, .contacts a:hover .profile a:hover {
-  color: white;                  /* зміна кольору при наведенні */
+nav li a:hover {
+  color: #ddd;                  
 }
-.IMPER {background-image: linear-gradient(135deg, rgba(34, 82, 129, 1) 15%, rgba(0, 0, 0, 1) 75%);}
 
-.boss_02 {background-color: #5a3030;
-border-radius: 10px;
-text-align: left
+header {
+  background-color: #666666;
+  background-image: url('https://i.ytimg.com/vi/-C8Ubw81UfA/maxresdefault.jpg');
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding: 20px 20px;
+  position: relative; /* для позиціонування заголовка */
+  width: 100%;       /* розтягнути на всю ширину */
+  min-height: 120px; /* зробити панель вищою */
 }
+
+header h1 {
+  color: #fff;  
+  text-shadow: 2px 2px 5px black;
+  position: absolute;
+  bottom: 10px;   /* вниз */
+  left: 20px;     /* зліва */
+  font-size: 28px;
+}
+
+
+.IMPER {
+  background-image: linear-gradient(135deg, rgba(34, 82, 129, 1) 15%, rgba(0, 0, 0, 1) 75%);
+  font-family: Arial, Helvetica, sans-serif;
+}
+.italic{
+  font-style: italic;
+}
+.boss_02 {
+  background-color: #5a3030;
+  border-radius: 10px;
+  text-align: left;
+}
+
 .layout {
   display: grid;
-  grid-template-columns: 3fr 1fr; /* ліва частина ширша, права вужча */
-  gap: 20px; /* відступ між блоками */
+  grid-template-columns: 3fr 1fr; 
+  gap: 20px; 
 }
 
 .content {
@@ -66,3 +84,98 @@ text-align: left
   padding: 20px;
 }
 
+image-block {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.footer-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin: 0 40px; /* відступи від країв сторінки */
+}
+
+.footer-text {
+  flex: 1;
+}
+
+.footer-image {
+  flex: 0 0 auto;
+  text-align: right;
+}
+
+.footer-image img {
+  width: 250px; /* однаковий розмір */
+  height: auto;
+}
+
+/* Кнопки у футері */
+.controls {
+  margin-top: 20px;
+  text-align: center;
+}
+
+.controls button {
+  background-color: #272b49; /* як у sidebar */
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  margin: 10px auto;
+  width: 220px;
+  text-align: center;
+  display: block; /* одна під одною */
+}
+
+.controls button:hover {
+  background-color: #3a3f60;
+  cursor: pointer;
+}
+.NUDE{
+  font-size: 20px;
+  color:#5a3030;
+  border: 1px solid #333;
+}
+.clock {
+  position: fixed;
+  right: 20px;
+  background-color: #272b49;
+  color:white;
+  border: none;
+  padding: 10px 15px;
+  width: 180px;
+  text-align: center;
+  border-radius: 7px;
+  font-size: 18px;
+  box-shadow: 2px 2px 6px rgba(0,0,0,0.5);
+}
+#clock-top {
+  top: 20px;
+}
+
+#clock-bottom {
+  bottom: 20px;
+}
+
+.clock:hover {
+  background-color: #3a3f60;
+  cursor:pointer
+}
+.layout {
+  display: grid;
+  grid-template-columns: 3fr 1fr; /* ліва частина ширша, права вужча */
+  gap: 20px;
+}
+
+.content {
+  background: linear-gradient(to bottom, #001f4d, #003366);
+  color: white;
+  padding: 20px;
+}
+
+.sidebar {
+  background: #272b49;
+  padding: 15px;
+  border-radius: 8px;
+  color: white;
+}

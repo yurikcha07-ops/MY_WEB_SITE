@@ -5,49 +5,79 @@
   <link rel="stylesheet" href="puter.css">
 </head>
 <body class="IMPER">
-
   <header class="header">
     <h1>Мій профіль</h1>
-   
-         <nav>
-          <ul>
-            <li class ="home"><a href="index.html">Home</a></li>
-        <li class = "profile"><a href="profile.html">Profile</a></li>
-            <li class="news"><a href="LastNews.html">Last News</a></li>
-          </ul>
-            </nav>
-      
-    
+    <nav>
+      <ul>
+        <li class="home"><a href="index.html">Home</a></li>
+        <li class="profile"><a href="Profile.html">Profile</a></li>
+        <li class="news"><a href="LastNews.html">Last News</a></li>
+        <li class="contacts"><a href="index.html#contacts">Contacts</a></li>
+      </ul>
+    </nav>
   </header>
 
   <main>
-    <h2>Введіть свої данні профілю</h2>
+    <br>
     <form action="#" method="get" enctype="multipart/form-data">
-      <div><p><label for="file">Виберіть фото профілю:</label><br/>
-          <input type="file" name="foto" ></p></div>
-     <div> <label for="name">Ім’я:</label></div>
-      <div><input type="text" id="name" name="name" placeholder="Введіть ім’я та прізвище"></div>
+      
+     <main class="layout">
+  <section class="content">
+    <h2>Введіть свої данні профілю</h2>
+   <div>
+        <label for="file">Виберіть фото профілю:</label><br/>
+        <input type="file" id="file" name="foto">
+      </div><br>
 
-     <div> <label for="email">Email:</label><br>
-      <div><input type="email" id="email" name="email" placeholder="testedovi@gmail.com"></div>
-<div><br />
-  <label for="password">Введіть Пароль:</label><br>
-  <input type="password" name="userpawsord" value="" placeholder="Пароль" /> 
-  <br>
-</div>
-     <div> <label for="phone">Телефон:</label></div>
-      <div><input type="tel" id="phone" name="phone" placeholder="+380"></div>
+      <div>
+        <label for="name">Ім’я:</label><br>
+        <input type="text" id="name" name="name" placeholder="Введіть ім’я та прізвище">
+      </div><br>
 
-      <div><label for="bio">Про себе:</label></div>
-     <div> <textarea id="bio" name="bio" rows="4" cols="40" placeholder="Напишіть декілька слів про себе"></textarea></div>
- Збережи зміни профлю або очисти:
-     <div> <input type="submit" value="Зберегти"> або <input type="reset" value="Очистити"></div>
+      <div>
+        <label for="email">Email:</label><br>
+        <input type="email" id="email" name="email" placeholder="testedovi@gmail.com">
+      </div><br>
+
+      <div>
+        <label for="password">Введіть Пароль:</label><br>
+        <input type="password" id="password" name="userpassword" placeholder="Пароль">
+      </div><br>
+
+      <div>
+        <label for="phone">Телефон:</label><br>
+        <input type="tel" id="phone" name="phone" placeholder="+380">
+      </div><br>
+
+      <div>
+        <label for="bio">Про себе:</label><br>
+        <textarea id="bio" name="bio" rows="4" cols="40" placeholder="Напишіть декілька слів про себе"></textarea>
+      </div><br>
+
+      <p>Збережи зміни профілю або очисти:</p>
+      <div>
+        <input type="submit" value="Зберегти"> 
+        <input type="reset" value="Очистити">
+      </div>
     </form>
-  </main>
+  </section>
+<aside class="sidebar">
+  <h2 class="NUDE">Мої завдання</h2>
+  <div id="todo-app">
+    <input type="text" id="taskInput" placeholder="Введіть завдання">
+    <button id="addTask" type="button">Додати</button>
+    <ul id="taskList"></ul>
+  </div>
+</aside>
 
-  <footer>
+</main>
+  </main>
+  <footer class="boss_02">
     <p>&copy; 2026 Pie Hunters. Всі права захищені.</p>
   </footer>
+  <div id="clock-top" class="clock"></div>
 
+
+  <script src="profile.js"></script>
 </body>
 </html>
